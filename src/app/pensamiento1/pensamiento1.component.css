@@ -12,6 +12,11 @@ body {
     line-height: 1.5;
 }
 
+video {
+   width: 450px 
+
+}
+
 h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
