@@ -3,18 +3,30 @@
 
 /* Common */
 body {
-    background-color: hwb(330 66% 1%);
+    background-color: hwb(56 71% 0%);
     font-family: "Inter", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
-    color:   hwb(330 66% 1%);
+    color:   hwb(56 71% 0%);
     line-height: 1.5;
 }
 
 video {
-   width: 450px 
+    display: block; 
+    width: 600px; 
+    margin: 0 auto; /* Centra el video horizontalmente */
 
+  }  
+  .pregunta p,
+.respuestas label {
+    color: black; /* Cambia el color del texto a negro */
+}
+
+
+.respuestas label {
+    display: block;
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -115,57 +127,11 @@ p {
     text-decoration: none;
 }
 
-.menu ul li a:hover {
-    background-color: #490c0c;
-}
-
-/* links */
-aside {
-    max-width: 250px;
-    background-color: rgb(143, 19, 19)
-    
- 
-}
-
-.card {
-    border: 1px solid #c4090920;
-    border-radius: 10px;
-    box-shadow: 7px 8px 8px #75080820;
-    margin-left: auto;
-}
-
-.card a {
-    padding: 16px;
-    text-decoration: none;
-    color: #0e0d0d;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card a img {
-    width: 100%;
-}
-
-.card a p {
-    text-align: justify;
-    font-size: 14px;
-}
-
-/* Mis cosas favoritas */
-.main-content img {
-    max-width: 100%;
-    display: block;
-    margin: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-}
-
 /* Footer */
 footer {
     padding-top: 16px;
     padding-bottom: 16px;
-    background-color: #520606;
+    background-color: #fa28aa;
     color: #f3f1f1;
     margin-top: 34px;
 }
