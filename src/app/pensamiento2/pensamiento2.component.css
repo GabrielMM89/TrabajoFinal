@@ -10,11 +10,16 @@ body {
     font-size: 16px;
     color:   hwb(56 71% 0%);
     line-height: 1.5;
+    /* Agregar imagen de fondo */
+    background-image: url('./../../assets/fondo3.webp'); /* Reemplaza 'ruta/de/la/imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita *
 }
 
 video {
     display: block; 
-    width: 600px; 
+    width: 900px; 
     margin: 0 auto; /* Centra el video horizontalmente */
 
   }  
