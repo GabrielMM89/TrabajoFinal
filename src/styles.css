@@ -1,1 +1,278 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* Common */
+body {
+    background-color: #DADAD9;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 45px;
+    margin: 30px 0;
+    
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+header {
+    color: #fff;
+    background-color: #C39F62;
+    box-shadow: 0px 0px 5px #000;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+p {
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+
+}
+
+/* Flexbox */
+.d-flex {
+    display: flex;
+
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+
+.items-center {
+    align-items: center;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.gap-3 {
+    gap: 16px
+}
+
+.gap-16 {
+    gap: 64px
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* Main Menu */
+.menu ul {
+    display: flex;
+    gap: 16px;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #05081f;
+    color: #fff;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #5D3614;
+}
+
+/* hobbies */
+aside {
+    max-width: 250px;
+}
+
+
+.card {
+    border: 1px solid #c2e09c20;
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px #e4080820;
+}
+
+.card a {   
+    padding: 16px;
+    text-decoration: none;
+    color: #3b11e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card a img {
+    width: 100%;
+}
+
+.card a p {
+    text-align: justify;
+    font-size: 14px;
+}
+
+/* Main content */
+.main-content img {
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background-color:#5D3614;
+    color: #fff;
+    margin-top: 34px;
+}
+
+/* Responsive */
+/* lg */
+@media (max-width: 1023px) {
+
+    /* common */
+    .lg-column {
+        flex-direction: column;
+    }
+
+    .lg-row {
+        flex-direction: row;
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: auto;
+    }
+
+    /* Links */
+    aside {
+        max-width: 100%;
+    }
+
+    aside ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    aside ul li {
+        width: 350px;
+        max-width: 100%;
+    }
+}
+Explicar
+.container {
+  overflow: hidden;
+}
+
+.texto1 {
+  float: left;
+  width: 50%;
+  margin-right: 16px;
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+
+.texto2 {
+  float: right;
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .texto1,
+  .texto2 {
+    float: none;
+    margin-right: 0;
+  }
+}
+
+ul {display:flex}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 20;
+	padding: 20;
+	border: 20;
+	font-size: 200%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
