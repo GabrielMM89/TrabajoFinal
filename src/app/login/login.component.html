@@ -1,0 +1,21 @@
+<div class="col-md-12 form">
+<div class="content">
+    <h4>Bievenido a cosmo lógico</h4>
+    <form name="loginForm" class="loginForm" ng-submit="login()">
+        <div class="form-group">
+            <label for="username">Username:</label>
+           
+            <input type="text" [(ngModel)]="username" class="form-control" id="username" name="username" ng-model="username" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="text" [(ngModel)]="password" class="form-control" id="password" name="password" ng-model="password" required>
+            
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="enviar()">Login</button>
+    </form>
+</div>
+
+<img src="assets/home-img/fondo.png" alt="">
+</div>
