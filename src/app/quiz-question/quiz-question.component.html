@@ -1,0 +1,15 @@
+<h2><span style="color: rgb(245, 44, 161);">¡Es hora de un reto!</span></h2>
+<div class="quiz-container">
+  <h1>{{ question.context }}</h1>
+  <p>{{ question.text }}</p>
+  <button mat-raised-button color="primary" (click)="showImage = !showImage">Mostrar imagen</button>
+  <img *ngIf="showImage" [src]="question.image" alt="parques2">
+  <button mat-raised-button color="primary" *ngFor="let option of question.options" (click)="checkAnswer(option.value)">{{ option.text }}</button>
+  <p *ngIf="showMessage">{{ message }}</p>
+</div>
+
+<div class="quiz-container">
+    <h1>{{ question2.context }}</h1>
+    <button mat-raised-button color="primary" *ngFor="let option of question.options" (click)="checkAnswer(option.value)">{{ option.text }}</button>
+    <p *ngIf="showMessage">{{ message }}</p>
+  </div>

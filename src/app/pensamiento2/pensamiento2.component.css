@@ -175,3 +175,38 @@ footer {
         max-width: 100%;
     }
 }
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .quiz-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .quiz-container button {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .quiz-container img {
+    width: 300px;
+    height: 225px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .quiz-container p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }

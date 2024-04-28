@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Pensamiento4Component } from './pensamiento4.component';
+import { QuizComponent } from './quiz.component';
 
 describe('Pensamiento4Component', () => {
-  let component: Pensamiento4Component;
+  let component: quizComponent;
   let fixture: ComponentFixture<Pensamiento4Component>;
 
   beforeEach(async () => {
