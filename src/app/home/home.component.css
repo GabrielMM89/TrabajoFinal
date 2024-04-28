@@ -1,5 +1,79 @@
-
-.imagen-planeta img {
-    width: 250px;
-    height: auto;
+.home {
+    position: relative;
+    width: 100vw;
+    
 }
+
+.home img.back {
+   
+    width: 100vw;
+}
+
+.titulo {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    color: #e81f76;
+    font-weight: bold;
+}
+
+.titulo span {
+    color: #000;
+    font-weight: 100;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "planeta1 titulo planeta3"
+      "planeta1 astronauta planeta3"
+      "planeta2 astronauta planeta4"
+      "planeta2 planeta5 planeta4";
+  }
+  
+  .titulo { grid-area: titulo; }
+  
+  .planeta1 { grid-area: planeta1; }
+  
+  .planeta2 { grid-area: planeta2; }
+  
+  .planeta3 { grid-area: planeta3; }
+  
+  .planeta4 { grid-area: planeta4; }
+  
+  .planeta5 { grid-area: planeta5; }
+  
+  .astronauta { grid-area: astronauta; }
+
+
+
+
+  .planeta {
+    height: 250px;
+  }
+  
+  .planeta img {
+    width: auto;
+    height: 350px;
+  }
+
+  .astronauta {
+    width: 250px;
+  }
+
+  .planeta5 {
+    margin-top: -4rem;
+  }
+  
