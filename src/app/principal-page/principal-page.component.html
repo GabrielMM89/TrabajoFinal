@@ -1,0 +1,13 @@
+<div>
+
+    <h1>{{titulo?.pregunta}}</h1>
+    <h2>{{count}}</h2>
+
+    <div *ngIf="count===10"> 
+        <img src="https://picsum.photos/200/300" alt="">
+        hola llegaste a 10
+    </div>
+
+    <button (click)="addCount()">suma boton</button>
+    <button (click)="minusCount()">-</button>
+</div>
