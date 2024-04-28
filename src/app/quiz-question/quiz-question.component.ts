@@ -25,10 +25,10 @@ export class QuizQuestionComponent {showImage = false;
   };
 
   question2 = {
-    context: 'Parque',
+    context: 'Piso',
     options: [
-      { text: 'a) 54 baldosas', value: 1 },
-      { text: 'b) 60 baldosas', value: 2 },
+      { text: 'a) 60 baldosas', value: 1 },
+      { text: 'b) 54 baldosas', value: 2 },
       { text: 'c) 58 baldosas', value: 3 },
       { text: 'd) 56 baldosas', value: 4 },
     ],
