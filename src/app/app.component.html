@@ -1,2 +1,3 @@
-<router-outlet />
-<app-pensamiento2/>
+<ng-container *ngFor="let pensamiento of pensamientos">
+    <app-pensamiento [data]="pensamiento"></app-pensamiento>
+  </ng-container>
