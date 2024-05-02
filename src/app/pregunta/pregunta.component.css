@@ -1,0 +1,44 @@
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-container button {
+    position: relative;
+    display: list-item;
+    text-align: center;
+    align-items: center;
+    width: 170px;
+    height: 100%;
+    background: rgb(245, 44, 161);
+    border: 2px solid rgb(245, 44, 161);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-container button:hover {
+    color: rgb(245, 44, 161);
+}
+
+.btn-container button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-container button:hover::before{
+    width: 100%;
+}
