@@ -1,6 +1,6 @@
 import { Pregunta } from "./pregunta";
 
 export interface Pensamiento {
-    id: string;
-    preguntas: Pregunta[];
+    id: number;
+    preguntas: Pregunta[] | undefined;
   }

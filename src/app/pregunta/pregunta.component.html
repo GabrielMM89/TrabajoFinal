@@ -1,1 +1,25 @@
-<p>pregunta works!</p>
+<div *ngIf="data">
+    <ng-container *ngIf="data.id === 'p1-3' || data.id === 'p1-4' || data.id === 'p2-1'">
+        <div class="quiz-container">
+            <h4>{{ data.titulo }}</h4>
+            <p>{{ data.pregunta }}</p>
+            <button mat-raised-button color="primary" *ngIf="data.imagen" (click)="showImage = !showImage">Mostrar imagen</button>
+            <img *ngIf="showImage && data.imagen" [src]="data.imagen" alt="Imagen">
+            <button mat-raised-button color="primary" *ngFor="let opcion of data.opciones" (click)="checkAnswer(opcion.value)">{{ opcion.text }}</button>
+            <p *ngIf="showMessage">{{ message }}</p>
+        </div>
+    </ng-container>
+
+    <ng-container *ngIf="data.id === 'p1-1' || data.id === 'p1-2' || data.id === 'p2-2'">
+        <div class="quiz-container">
+            <h4>{{ data.titulo }}</h4>
+
+            <p style="text-align: justify; color: rgb(8, 8, 8);">{{data.pregunta}}</p>
+            <iframe *ngIf="data.simulador" [src]="data.simulador" style="width: 100%; height: 500px; width: 1100px;border: none;margin: 20px"></iframe>
+            <div>
+                <button mat-raised-button color="primary" *ngFor="let opcion of data.opciones" (click)="checkAnswer(opcion.value)">{{ opcion.text }}</button>
+                <p *ngIf="showMessage">{{ message }}</p>
+            </div>
+        </div>
+    </ng-container>
+</div>
