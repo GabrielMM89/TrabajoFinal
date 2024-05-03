@@ -87,7 +87,7 @@
                 </section>
             </section>
 
-            <h2><span style="color: rgb(245, 44, 161);">¡Es hora de un reto!</span></h2>
+            <h1><span style="color: rgb(245, 44, 161);">¡Es hora de un reto!</span></h1>
             <ng-container *ngFor="let pregunta of data.preguntas">
                 <app-pregunta [data]="pregunta"></app-pregunta>
             </ng-container>
@@ -417,5 +417,11 @@
         </body>
 
         </html>
+    </ng-container>
+
+    <ng-container *ngIf="(data.id === 4 || data.id === 5)">
+    <div class="basic-container">
+        <h1>¡Estamos trabajando en este pensamiento! Vuelve pronto :)</h1>
+    </div>
     </ng-container>
 </div>

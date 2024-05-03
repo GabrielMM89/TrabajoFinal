@@ -126,6 +126,10 @@ export class PensamientoComponent {
       },
     ];
     const id = parseInt(this.route.snapshot.paramMap.get('id') || '', 10);
-    this.data = this.pensamientos.find(p => p.id === id);
+    if(this.pensamientos.find(p => p.id === id)){
+      this.data = this.pensamientos.find(p => p.id === id);
+    }else{
+      this.data = {id:id, preguntas: undefined};
+    }
   }
 }
